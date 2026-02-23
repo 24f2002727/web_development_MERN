@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5 CSS specicity</title>
+    <style>
+
+        /* for part1 */
+        h1{
+            color: pink;
+            background-color: aqua;
+
+        }
+        #greet{
+            color:yellow;
+        }
+        .myclass{
+            color: brown;
+        }
+
+        /* for part2 */
+        div p{
+            background-color: black;
+        }
+        .para{
+            background-color: blue;
+        }
+        p{
+            background-color: green;
+        }
+
+        /* for part3 */
+        div.greetDiv .greet{
+            background-color: green;
+        }
+        .greetDiv p.greet{
+            background-color: blue;
+        }
+        .greetDiv .greet{
+            background-color: red;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h3>part1</h3>
+    <h1 class="myclass" id="greet">Hello !</h1>
+    <p>
+        h1
+        {
+            color: pink;
+            background-color: aqua;
+
+        }
+        <br>
+        #greet{
+            color:yellow;
+        }
+        <br>
+        .myclass{
+            color: brown;
+        }
+        <br>
+        <h2>Hello colour is yellow since specicity of id attribute is greater</h2>
+    </p>
+
+    <div>
+    <h3>part2</h3>
+    <p class="para">This is a paragraph</p>
+    <div>
+        div p{
+            background-color: black;
+        }<br>
+        .para{
+            background-color: blue;
+        }<br>
+        p{
+            background-color: green;
+        }
+    </p>
+    <p><h2>Backgriound color is blue due to specifity</h2></p>
+    </div>
+
+    <h3>part3</h3>
+    <div class="greetDiv">
+        <p class="greet">Hello world!</p>
+        <div>
+            div.greetDiv .greet{
+            background-color: green;
+            }<br>
+        .greetDiv p.greet{
+            background-color: blue;
+        }<br>
+        .greetDiv .greet{
+            background-color: red;
+        }
+        </div>
+        <h3>Specificity blue wins here
+            
+        </h3>
+    </div>
+
+</body>
+</html>
