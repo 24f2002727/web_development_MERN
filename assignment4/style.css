@@ -1,0 +1,26 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#blue{
+    background-color: rgb(93, 135, 251);
+}
+#color{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* font-size: .6rem; */
+}
+#color p{
+    transform: rotateX(90deg);
+    /* transform: rotateY(90deg); */
+    /* transform: rotate(90deg); */
+}

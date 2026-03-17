@@ -10,8 +10,8 @@
     display: grid;
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(4 ,1fr);
-    align-items: end;
-    justify-items: end;
+    align-items: center;
+    justify-items: center;
 
 }
 .container div{
@@ -26,23 +26,40 @@
 
     }
 
+.container div:hover{
+    box-shadow: 2px 2px 10px 1px;
+    transform: scale(1.05);
+}
+
     @media (max-width: 768px) {
         .container {
             width: 100%;
             height: 400px;
             grid-template-columns: repeat(2, 1fr);
         }
+        .container div{
+    height: 75px;
+    font-weight: 700;
+    font-size: 60px;
+    }
     }
 
     @media (max-width: 480px) {
         .container {
+            height: 100%;
             width: 100%;
             grid-template-columns: 1fr;
         }
         .container div {
-            height: 80px;
-            width: 80px;
+            height: 50px;
             font-size: 50px;
         }
     }
 
+    @media (max-width: 175px) {
+
+        .container div {
+            height: 25px;
+            font-size: 30px;
+        }
+    }

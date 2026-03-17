@@ -6,6 +6,8 @@
 /* header part */
 header{
     background-color: black;
+    box-sizing: border-box;
+    height: 50px;
     width:100vw;
     font-size:0.6rem;
     display: flex;
@@ -25,11 +27,13 @@ body a{
 #header2{
     align-self: flex-end ;
     
-}
+ } */
 .custom-small{
     padding: 2px 5px;
     font-size: 0.6rem;
-} */
+    height: 30px;
+    width: 175px;
+} 
 
 /* section1 */
 #section1{
